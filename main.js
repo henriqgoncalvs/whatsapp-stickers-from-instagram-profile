@@ -79,6 +79,7 @@ const getImagesInstagram = async () => {
 
   console.log('Screenshot saved');
 
+  // If you changed to instagram, don't forget to change selector
   const srcImagesArray = await page.evaluate(() =>
     Array.from(document.querySelectorAll('.item .img img'), (e) => e.src),
   );
